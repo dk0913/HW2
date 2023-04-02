@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Simple Linear Layout for the activity_patent page-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PatentActivity">
+
+    <!--Displays two gray dividers sandwiching a TextView with the title of the page/-->
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patent Info Page"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <View
+        android:id="@+id/dividerMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <!--Displays TextViews to show the user the ID,Title, and Assignee of the patent
+    they selected/-->
+    <TextView
+        android:id="@+id/patent_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/patent_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/patent_assignee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+    <!--Displays ImageView to show the user the drawing of the patent
+    they selected/-->
+    <ImageView
+        android:id="@+id/imageViewFigure"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        />
+
+    <!--Displays the back button for the user to click and navigate back
+    to the main activity page to potentially click a different patent-->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_patent_list"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</LinearLayout>
